@@ -1,10 +1,9 @@
 *{
     margin:0;
     padding:0;
-    box-sizing:
 }
 body{
-    background:#CCCAA1;
+    background:#40417d;
     font-family: 'Source Sans Pro', sans-serif;
 }
 ul li{
@@ -16,24 +15,36 @@ h1{
     font-family: 'Roboto Condensed', sans-serif;
     font-size:2.2em;
 }
+img {
+  margin: 0px auto;
+  display:block;
+}
 #wrapper{
-    width: 728px;
-    margin: 60px auto;
-    background: #fff;
-    padding: 10px;
-    height: 280px;
-    border:12px solid #DDE0CA;
+    display: center;
+    max-width:1500px;
+    margin: 0px auto;
+    background: #7A7A7A;
+    padding-right: : 0px;
+    max-height: 600px;
+    border-bottom: 3px solid;
+    border-color: #000000;
+}
+#menu{
+  padding-left: 30px;
 }
 .nav{
     overflow:hidden;
     margin:0 auto;
     width:750px;
+    display: center;
+    padding-left: 150px;
+    padding-top: 0px;
 }
 .nav li{
     width:145px;
-    height:180px;
+    height:65px;
     display:inline-block;
-    float:left;
+    float:inherit;
     cursor:pointer;
     transition:all 0.4s;
     -webkit-transition:all 0.4s;
@@ -41,28 +52,25 @@ h1{
 }
 .nav li:hover{
     opacity:1;
-    height:190px;
+    height:8px;
 }
 .nav li.hm:hover{
-    border-bottom:4px solid rgba(11, 132, 138, 1);
-}
-.nav li.fb:hover{
-    border-bottom:4px solid rgba(241, 83, 70, 1);
+    border-bottom:4px solid rgba(0, 0, 0, 1);
 }
 .nav li.gp:hover{
-    border-bottom:4px solid rgba(32, 16, 49, 1);
+    border-bottom:4px solid rgba(0, 0, 0, 1);
 }
 .nav li.tw:hover{
-    border-bottom:4px solid rgba(228, 148, 7, 1);
+    border-bottom:4px solid rgba(0, 0, 0, 1);
 }
 .nav li.cl:hover{
-    border-bottom:4px solid rgba(67, 138, 15, 1);
+    border-bottom:4px solid rgba(0, 0, 0, 1);
 }
 img.icon{
     background:rgba(255, 255, 255, 0.4);
-    padding:14px;
+    padding:0px;
     border-radius:100%;
-    margin:30px auto;
+    margin:8px auto;
     display:block;
     transition:all 0.8s;
     -webkit-transition:all 0.8s;
@@ -78,7 +86,7 @@ img.icon{
 .nav li span{
     text-align:center;
     display:block;
-    padding-top:10px;
+    padding-top:0px;
     color:rgba(255, 255, 255, 1);
     font-size:0.9em;
     transition:padding-top 0.4s;
@@ -88,17 +96,14 @@ img.icon{
     padding-top:20px;
 }
 .hm{
-    background:rgba(29, 162, 168, 0.8);
-}
-.fb{
-    background:rgba(255, 89, 76, 0.8);
+    background: #8cc8e9;
 }
 .gp{
-    background:rgba(47, 31, 64, 0.8);
+    background: #ffcd05;
 }
 .tw{
-    background:rgba(254, 162, 14, 0.8);
+    background: #8cc8e9;
 }
 .cl{
-    background:rgba(93, 181, 29, 0.8);
+    background: #ffcd05;
 }
