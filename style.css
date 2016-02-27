@@ -52,7 +52,7 @@ img {
 }
 .nav li:hover{
     opacity:1;
-    height:8px;
+    height:87px;
 }
 .nav li.hm:hover{
     border-bottom:4px solid rgba(0, 0, 0, 1);
