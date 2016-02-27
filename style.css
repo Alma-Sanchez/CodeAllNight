@@ -48,7 +48,8 @@ img {
     width:145px;
     height:65px;
     display:inline-block;
-    float:inherit;
+    float:left;
+    margin: 0px 2px;
     cursor:pointer;
     transition:all 0.4s;
     -webkit-transition:all 0.4s;
