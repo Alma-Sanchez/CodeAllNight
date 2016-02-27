@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:#40417d;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+ul li{
+    list-style:none;
+}
+h1{
+    padding:15px 0 25px 0;
+    text-align:center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:2.2em;
+}
+img {
+  margin: 0px auto;
+  display:block;
+}
+#wrapper{
+    display: center;
+    max-width:1500px;
+    margin: 0px auto;
+    background: #7A7A7A;
+    padding-right: : 0px;
+    max-height: 600px;
+    border-bottom: 3px solid;
+    border-color: #000000;
+}
+#menu{
+  padding-left: 30px;
+}
+.nav{
+    overflow:hidden;
+    margin:0 auto;
+    width:750px;
+    display: center;
+    padding-left: 150px;
+    padding-top: 0px;
+}
+.nav li{
+    width:145px;
+    height:65px;
+    display:inline-block;
+    float:inherit;
+    cursor:pointer;
+    transition:all 0.4s;
+    -webkit-transition:all 0.4s;
+    -moz-transition:all 0.4s;
+}
+.nav li:hover{
+    opacity:1;
+    height:8px;
+}
+.nav li.hm:hover{
+    border-bottom:4px solid rgba(0, 0, 0, 1);
+}
+.nav li.gp:hover{
+    border-bottom:4px solid rgba(0, 0, 0, 1);
+}
+.nav li.tw:hover{
+    border-bottom:4px solid rgba(0, 0, 0, 1);
+}
+.nav li.cl:hover{
+    border-bottom:4px solid rgba(0, 0, 0, 1);
+}
+img.icon{
+    background:rgba(255, 255, 255, 0.4);
+    padding:0px;
+    border-radius:100%;
+    margin:8px auto;
+    display:block;
+    transition:all 0.8s;
+    -webkit-transition:all 0.8s;
+    -moz-transition:all 0.8s;
+    box-shadow: 0 0 0 30px rgba(255,255,255,0.1);
+    -webkit-box-shadow: 0 0 0 10px rgba(255,255,255,0.1);
+}
+.nav li:hover img.icon{
+    background:rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 10px rgba(255,255,255,0.8);
+    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,0.8);
+}
+.nav li span{
+    text-align:center;
+    display:block;
+    padding-top:0px;
+    color:rgba(255, 255, 255, 1);
+    font-size:0.9em;
+    transition:padding-top 0.4s;
+    -webkit-transition:padding-top 0.4s;
+}
+.nav li:hover span{
+    padding-top:20px;
+}
+.hm{
+    background: #8cc8e9;
+}
+.gp{
+    background: #ffcd05;
+}
+.tw{
+    background: #8cc8e9;
+}
+.cl{
+    background: #ffcd05;
+}
