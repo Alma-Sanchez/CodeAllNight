@@ -1,1 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+     <link rel="icon" type="image/png" href="../Images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+</head>
+<body>
 
+    <div id="wrapper">
+        <img src="../Images/logo.jpg" alt="hackallnight">
+    </div>
+    <div id="menu">
+        <ul class="nav">
+            <li class="home">
+                <a href="../index.html"><img class="icon" src="../Images/home.png" alt="home page icon and link"><span>Home</span></a>
+            </li>
+            <li class="maps">
+                <a href="maps.html"><img class="icon" src="../Images/location.png" alt="find hackathons by location"><span>Maps</span></a>
+            </li>
+            <li class="featuredProjects">
+                <a href="featured.html"><img class="icon" src="../Images/shape_star.png" alt="features projects"><span>Featured Projects</span></a>
+            </li>
+            <li class="formTeam">
+                <a href="team.html"><img class="icon" src="../Images/team.png" alt="form a team!"><span>Team Builder</span></a>
+            </li>
+        </ul>
+    </div>
+
+<h1 style="color:white;">Hackathons Near You</h1>
+    
+
+    <div id="map"></div>
+
+
+<script>
+function initMap() {
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+
+    center: {lat: 40.2627, lng: -74.7983},
+
+    zoom: 8
+
+  });
+
+
+var marker = new google.maps.Marker({
+
+    position: {lat: 40.2627, lng: -74.7983},
+
+    map: map,
+
+    title: "HackTCNJ"
+
+  });
+
+var markerInfo = new google.maps.InfoWindow({
+    content: "HackTCNJ"
+});
+
+google.maps.event.addListener(marker, 'click', function() {markerInfo.open(map,marker);
+});
+
+
+var marker1 = new google.maps.Marker({
+
+    position: {lat: 39.7001, lng: -75.1114},
+
+    map: map,
+
+    title: "ProfHacks"
+
+  });
+
+var markerInfo1 = new google.maps.InfoWindow({
+    content: "ProfHacks"
+});
+
+google.maps.event.addListener(marker1, 'click', function() {markerInfo1.open(map,marker1);
+});
+
+
+var marker2 = new google.maps.Marker({
+
+    position: {lat: 40.3571, lng: -74.6702},
+
+    map: map,
+
+    title: "HackPrinceton"
+
+  });
+
+var markerInfo2 = new google.maps.InfoWindow({
+    content: "HackPrinceton"
+});
+
+google.maps.event.addListener(marker2, 'click', function() {markerInfo2.open(map,marker2);
+});
+
+
+var marker3 = new google.maps.Marker({
+
+    position: {lat: 40.8894, lng: -74.0457},
+
+    map: map,
+
+    title: "HackBCA"
+
+  });
+
+var markerInfo3 = new google.maps.InfoWindow({
+    content: "HackBCA"
+});
+
+google.maps.event.addListener(marker3, 'click', function() {markerInfo3.open(map,marker3);
+});
+
+var marker4 = new google.maps.Marker({
+
+    position: {lat: 40.5017, lng: -74.4481},
+
+    map: map,
+
+    title: "HackRU"
+
+  });
+
+var markerInfo4 = new google.maps.InfoWindow({
+    content: "HackRU"
+});
+
+google.maps.event.addListener(marker4, 'click', function() {markerInfo4.open(map,marker4);
+});
+
+
+var marker5 = new google.maps.Marker({
+
+    position: {lat: 40.5040, lng: -74.3494},
+
+    map: map,
+
+    title: "HackEHS"
+
+  });
+
+var markerInfo5 = new google.maps.InfoWindow({
+    content: "HackEHS"
+});
+
+
+google.maps.event.addListener(marker5, 'click', function() {markerInfo5.open(map,marker5);
+});
+
+var marker6 = new google.maps.Marker({
+
+    position: {lat: 40.7416, lng: -74.3213},
+
+    map: map,
+
+    title: "HackMHS"
+
+  });
+
+var markerInfo6 = new google.maps.InfoWindow({
+    content: "HackMHS"
+});
+
+
+google.maps.event.addListener(marker6, 'click', function() {markerInfo6.open(map,marker6);
+});
+
+  // Try HTML5 geolocation.
+
+  if (navigator.geolocation) {
+
+    navigator.geolocation.getCurrentPosition(function(position) {
+
+      var pos = {
+
+        lat: position.coords.latitude,
+
+        lng: position.coords.longitude
+
+      };
+
+
+      map.setCenter(pos);
+
+    }, function() {
+
+      handleLocationError(true, infoWindow, map.getCenter());
+
+    });
+
+  } else {
+
+    // Browser doesn't support Geolocation
+
+    handleLocationError(false, infoWindow, map.getCenter());
+
+  }
+}
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+
+  infoWindow.setPosition(pos);
+
+  infoWindow.setContent(browserHasGeolocation ? 'Error: The Geolocation service failed.' : 'Error: Your browser doesn\'t support geolocation.');
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJYpgEr-qGxrGR8oUKn5TkUrOHdCly2eA&signed_in=true&callback=initMap"></script>
+</body>
+<footer>
+    
+</footer>
+</html>
