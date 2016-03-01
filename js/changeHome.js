@@ -5,8 +5,15 @@ function change(){
 	var changeThis = document.getElementById("changeThis");
 	var itemClass =  document.getElementsByClassName(selected);
 	var profiles = [];
-
-		if("HackTCNJ" == selected){
+		if("All" == selected){
+			$('#portfolio').each(function(){
+				var portfolio = '';
+				$(this).find('li').each(function(){
+					var current = $(this);
+					this.style.display = "inline-block";
+				})
+			})
+		}else if("HackTCNJ" == selected){
 			$('#portfolio').each(function(){
 				var portfolio = '';
 				$(this).find('li').each(function(){
