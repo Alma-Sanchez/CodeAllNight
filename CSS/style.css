@@ -585,13 +585,18 @@ projects
   box-shadow: 0 1px 4px rgba(0,0,0,0.55);
 }
 /** clearfix **/
-.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
-.clearfix { display: inline-block; }
+/*.clearfix:after { 
+  content: "."; 
+  display: block; 
+  clear: both; visibility: hidden; 
+  line-height: 0; height: 0; 
+}*/
+/*.clearfix { display: inline-block; }
  
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
-
+*/
 /** media queries **/
 @media screen and (max-width: 720px) {
   h1 { font-size: 60px; }
@@ -605,5 +610,8 @@ html[xmlns] .clearfix { display: block; }
   #filter-list li { display: block; margin-bottom: 3px; }
   
   #portfolio { margin-bottom: 20px; }
-  #portfolio .item { width: 100%; margin-bottom: 12px; margin-right: 0; }
+  #portfolio .item { 
+    width: 100%; 
+    margin-bottom: 12px; 
+    margin-right: 0; }
 }
